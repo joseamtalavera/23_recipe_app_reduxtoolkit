@@ -12,7 +12,7 @@ export const AllRecipes = ({allRecipes, dispatch}) => {
     const onFirstRender = () => {
         dispatch(loadData());
     }
-    useEffect(onFirstRender, [])
+    useEffect(onFirstRender, [dispatch])
 
     const onAddRecipeHandler = (recipe)=> {
         dispatch(addRecipe(recipe));
