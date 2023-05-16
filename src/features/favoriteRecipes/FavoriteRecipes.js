@@ -1,13 +1,19 @@
 import React from 'react';
-
-import { removeRecipe } from './favoriteRecipesSlice.js';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeRecipe, selectFilteredFavoriteRecipes } from './favoriteRecipesSlice.js';
 import {FavoriteButton} from '../../components/FavoriteButton';
 import {Recipe} from '../../components/Recipe';
 
 
 const unfavoriteIconUrl = 'https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/unfavorite.svg'
 
-export const FavoriteRecipes = ({favoriteRecipes, dispatch}) => {
+export const FavoriteRecipes = () => {
+    const favoriteRecipes = useSelector(selectFilteredFavoriteRecipes);
+    const dispatch = useDispatch;
+
+
+
+
 
     const onRemoveRecipeHandler = (recipe) => {
         dispatch(removeRecipe(recipe));
