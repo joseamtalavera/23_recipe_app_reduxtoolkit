@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Recipe App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Recipe App bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The app lists a variety of recipes, allowing users to select their favorite ones.
+
+## Redux Toolkit
+
+The state management of this application is handled using Redux Toolkit (RTK), a package that simplifies the process of setting up and using Redux in a React application. It includes several functions that implement best practices, prevent common mistakes, and make it easier to write Redux code.
+
+Key features of Redux Toolkit used in this application include:
+
+- `createSlice()`: This function helps to simplify Redux reducer logic and actions. It takes a configuration object as a parameter, which includes properties like name, initialState, and reducers.
+
+- `configureStore()`: This function simplifies the store setup process. It wraps around the Redux core createStore() function and the combineReducers() function, handling most of the store setup automatically.
 
 ## Available Scripts
 
@@ -41,30 +51,4 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/)
